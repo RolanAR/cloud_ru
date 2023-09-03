@@ -1,0 +1,19 @@
+# myapp/values.yaml
+
+namespace: rolamspace
+# Имя Docker-образа
+image:
+  repository:
+  name: rolan777/myapp1-image
+  tag: latest
+
+# Количество реплик приложения
+replicaCount: 3
+
+# Значение переменной AUTHOR
+author: "RolanAR"
+
+service:
+  type: ClusterIP
+  port: 80
+

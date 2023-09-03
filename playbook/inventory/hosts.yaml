@@ -1,0 +1,9 @@
+all:
+  hosts:
+    target_host:
+      ansible_host: 192.168.0.114
+  vars:
+    ansible_ssh_user: q
+    ansible_ssh_pass: 1
+    ansible_become_pass: 1
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
